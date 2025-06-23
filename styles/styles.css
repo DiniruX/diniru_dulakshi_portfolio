@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.left-panel {
+    width: 33.33%;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: #000;
+    color: #f2f2f2;
+}
+
+.left-panel blockquote {
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: bold;
+    line-height: 1.5;
+    /* border-left: 4px solid #4caf50; */
+    padding-left: 15px;
+    text-align: center;
+}
+
+.description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+    text-align: justify;
+    font-style: normal;
+}
+
+.right-panel {
+    width: 66.66%;
+    position: relative;
+    overflow: hidden;
+    height: 100vh; 
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% center;
+    filter: brightness(0.8);
+    transition: filter 0.3s ease-in-out;
+    display: block;
+}
+
+.label {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #8f8f8f, 0 0 15px #383838;
+  }
+  50% {
+    box-shadow: 0 0 8px #cc1111, 0 0 20px #720808, 0 0 25px #383838;
+  }
+}
+
+.label.sparkle {
+  animation: sparkle 2s infinite;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 4px solid #383838;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.label.sparkle::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow:
+    0 0 8px #fff,
+    5px 5px 10px #97a8d4,
+    -5px -5px 10px #97a8d4;
+  animation: glitter 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes glitter {
+  0% { transform: scale(1) rotate(0deg); opacity: 0.6; }
+  100% { transform: scale(1.3) rotate(45deg); opacity: 1; }
+}
