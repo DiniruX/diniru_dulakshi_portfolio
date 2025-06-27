@@ -47,3 +47,34 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+
+const audio = document.getElementById("bg-music");
+const popup = document.getElementById("music-popup");
+const yesBtn = document.getElementById("yes-music");
+const noBtn = document.getElementById("no-music");
+const musicIcon = document.getElementById("music-icon");
+const musicToggle = document.getElementById("music-toggle");
+let isPlaying = false;
+
+yesBtn.addEventListener("click", () => {
+  audio.play().catch(() => {});
+  musicIcon.setAttribute("name", "pause-circle-outline");
+  isPlaying = true;
+  popup.style.display = "none";
+});
+
+noBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+musicToggle.addEventListener("click", () => {
+  if (isPlaying) {
+    audio.pause();
+    musicIcon.setAttribute("name", "musical-notes-outline");
+  } else {
+    audio.play();
+    musicIcon.setAttribute("name", "pause-circle-outline");
+  }
+  isPlaying = !isPlaying;
+});

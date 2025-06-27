@@ -1,480 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Responsive Portfolio</title>
+    <title>Responsive Portfolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="preload" as="image" href="portfolio.png">
-  <link rel="preload" as="image" href="Blog.svg">
+    <link rel="preload" as="image" href="portfolio.png" />
+    <link rel="preload" as="image" href="Blog.svg" />
+  </head>
 
-</head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="/diniru_dulakshi_portfolio" class="logo">
+          <img src="../images/background.png" width="64" height="24" alt="Diniru home" />
+        </a>
 
-<body>
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="/" class="logo">
-        <img src="../images/background.png" width="64" height="24" alt="Diniru home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link">Home</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link">About</a>
-          </li>
-
-          <li>
-            <a href="#project" class="navbar-link">Projects</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link">Contact</a>
-          </li>
-
-        </ul>
-
-        <div class="wrapper">
-          <a href="#" class="contact-link">support@email.com</a>
-
-          <a href="#" class="contact-link">+123 456 7890</a>
-        </div>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="https://www.twitter.com" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.facebook.com" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.instagram.com" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.youtube.com" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
-  </header>
-
-
-  <main>
-    <article>
-
-      <section class="section hero" aria-label="home" id="home">
-        <div class="container">
-
-          <figure class="hero-banner">
-            <img src="portfolio.png" width="" height="" alt="Diniru" class="w-100" data-reveal="top">
-
-            <img src="./dulakshi.png" width="450" alt="250+ Projects Done" data-reveal="top" class="hero-image"
-              data-reveal-delay="0.25s">
-          </figure>
-
-          <div class="hero-content">
-
-            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-              I'm a Data Engineer & Web Developer
-            </h1>
-
-            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-              Hello! I'm Dulakshi, a Data Engineer & Web Developer based in Japan. I’m very passionate
-              about creating Unique and Interactive Designs.
-            </p>
-
-            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="#project" class="btn btn-primary">My Projects</a>
-
-              <a href="#contact" class="btn btn-secondary">Contact Me</a>
-            </div>
-
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
           </div>
 
-        </div>
-      </section>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
 
+            <li>
+              <a href="#about" class="navbar-link">About</a>
+            </li>
 
-      <section class="section about" aria-label="about" id="about">
-        <div class="container">
+            <li>
+              <a href="#project" class="navbar-link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+          </ul>
 
           <div class="wrapper">
+            <a href="#" class="contact-link">support@email.com</a>
 
-            <div data-reveal="left">
-              <h2 class="h2 section-title">What I Do?</h2>
+            <a href="#" class="contact-link">+123 456 7890</a>
+          </div>
 
-              <p class="section-text">
-                I am a Data Engineer and Web Developer with a passion for creating innovative solutions. My expertise lies in developing web applications, mobile applications, and implementing DevOps practices. I thrive on challenges and enjoy collaborating with teams to deliver high-quality projects.
+          <ul class="social-list">
+            <li>
+              <a href="https://www.twitter.com" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="section hero" aria-label="home" id="home">
+          <div class="container">
+            <figure class="hero-banner">
+              <img src="portfolio.png" width="" height="" alt="Diniru" class="w-100" data-reveal="top" />
+
+              <img src="./dulakshi.png" width="450" alt="250+ Projects Done" data-reveal="top" class="hero-image" data-reveal-delay="0.25s" />
+            </figure>
+
+            <div class="hero-content">
+              <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">I'm a Data Engineer & Web Developer</h1>
+
+              <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+                Hello! I'm Dulakshi, a Data Engineer & Web Developer based in Japan. I’m very passionate about creating Unique and Interactive Designs.
               </p>
+
+              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                <a href="#project" class="btn btn-primary">My Projects</a>
+
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section about" aria-label="about" id="about">
+          <div class="container">
+            <div class="wrapper">
+              <div data-reveal="left">
+                <h2 class="h2 section-title">What I Do?</h2>
+
+                <p class="section-text">
+                  I am a Data Engineer and Web Developer with a passion for creating innovative solutions. My expertise lies in developing web applications, mobile applications,
+                  and implementing DevOps practices. I thrive on challenges and enjoy collaborating with teams to deliver high-quality projects.
+                </p>
+              </div>
+
+              <ul class="progress-list" data-reveal="right">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Data Engineering</p>
+
+                    <span class="span">100%</span>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-fill" style="width: 100%; background-color: #6e07d6"></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>AI/ ML</p>
+
+                    <span class="span">90%</span>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-fill" style="width: 80%; background-color: #0556ec"></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Data Analysis</p>
+
+                    <span class="span">45%</span>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-fill" style="width: 45%; background-color: #08da6a"></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Freelancer</p>
+
+                    <span class="span">60 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div class="progress-fill" style="width: 60%; background-color: #e67206"></div>
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            <ul class="progress-list" data-reveal="right">
+            <ul class="grid-list">
+              <li data-reveal="bottom">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon" />
+                  </div>
 
-              <li class="progress-item">
+                  <h3 class="h4 card-title">Data Engineering</h3>
 
-                <div class="label-wrapper">
-                  <p>Data Engineering</p>
-
-                  <span class="span">100%</span>
+                  <p class="card-text">Develop technical skills in data engineering. Gain practical experience through collaboration.</p>
                 </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 100%; background-color: #6e07d6"></div>
-                </div>
-
               </li>
 
-              <li class="progress-item">
+              <li data-reveal="bottom" data-reveal-delay="0.25s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon" />
+                  </div>
 
-                <div class="label-wrapper">
-                  <p>AI/ ML</p>
+                  <h3 class="h4 card-title">AI/ ML</h3>
 
-                  <span class="span">90%</span>
+                  <p class="card-text">Develop technical skills in AI/ ML. Gain practical experience through collaboration.</p>
                 </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 80%; background-color: #0556ec"></div>
-                </div>
-
               </li>
 
-              <li class="progress-item">
+              <li data-reveal="bottom" data-reveal-delay="0.5s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="icon-3.svg" width="52" height="52" loading="lazy" alt="web development icon" />
+                  </div>
 
-                <div class="label-wrapper">
-                  <p>Data Analysis</p>
+                  <h3 class="h4 card-title">Data Analysis</h3>
 
-                  <span class="span">45%</span>
+                  <p class="card-text">Data Analyst with expertise in data visualization, statistical analysis, and machine learning.</p>
                 </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 45%; background-color: #08da6a"></div>
-                </div>
-
               </li>
 
-              <li class="progress-item">
+              <li data-reveal="bottom" data-reveal-delay="0.75s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img src="icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon" />
+                  </div>
 
-                <div class="label-wrapper">
-                  <p>Freelancer</p>
+                  <h3 class="h4 card-title">Freelancer</h3>
 
-                  <span class="span">60 %</span>
+                  <p class="card-text">Develop technical skills in data engineering. Gain practical experience through collaboration.</p>
                 </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 60%; background-color: #e67206"></div>
-                </div>
-
               </li>
-
             </ul>
-
           </div>
+        </section>
 
-          <ul class="grid-list">
+        <section class="section project" aria-labelledby="project-label" id="project">
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
 
-            <li data-reveal="bottom">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
-                </div>
-
-                <h3 class="h4 card-title">Data Engineering</h3>
-
-                <p class="card-text">
-                  Develop technical skills in data engineering. Gain practical experience through collaboration.
-                </p>
-
+                <p class="section-text">Check Out My Latest Fully Interactive Projects.</p>
               </div>
-            </li>
 
-            <li data-reveal="bottom" data-reveal-delay="0.25s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
-                </div>
-
-                <h3 class="h4 card-title">AI/ ML</h3>
-
-                <p class="card-text">
-                  Develop technical skills in AI/ ML. Gain practical experience through collaboration.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.5s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="icon-3.svg" width="52" height="52" loading="lazy" alt="web development icon">
-                </div>
-
-                <h3 class="h4 card-title">Data Analysis</h3>
-
-                <p class="card-text">
-                  Data Analyst with expertise in data visualization, statistical analysis, and machine learning.
-                </p>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.75s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
-                </div>
-
-                <h3 class="h4 card-title">Freelancer</h3>
-
-                <p class="card-text">
-                  Develop technical skills in data engineering. Gain practical experience through collaboration.
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-      <section class="section project" aria-labelledby="project-label" id="project">
-        <div class="container">
-
-          <div class="title-wrapper" data-reveal="top">
-
-            <div>
-              <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
-
-              <p class="section-text">
-                Check Out My Latest Fully Interactive Projects.
-              </p>
+              <a href="#" class="btn btn-secondary">See All Projects</a>
             </div>
 
-            <a href="#" class="btn btn-secondary">See All Projects</a>
+            <ul class="grid-list">
+              <li>
+                <div class="project-card project-card-1" style="background-color: #f8f5fb">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #a07cc5">Data Engineering</p>
 
+                    <h3 class="h3 card-title">Sales Data Dashboard</h3>
+
+                    <p class="card-text">
+                      The Sales Data Dashboard is an interactive web application that provides real-time insights into sales performance. It features dynamic visualizations and
+                      intuitive controls to help users explore and analyze sales data effectively.
+                    </p>
+
+                    <a href="https://asianmirror.lk/" class="btn-text" style="color: #a07cc5">
+                      <span class="span">Demo</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img src="./salesdata.jpg" width="650" height="370" loading="lazy" alt="Web Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-2" style="background-color: #f1f5fd">
+                  <div class="card-content" data-reveal="right">
+                    <p class="card-tag" style="color: #3f78e0">AI/ ML</p>
+
+                    <h3 class="h3 card-title">HappyKid</h3>
+
+                    <p class="card-text">HappyKid is a interactive application specifically for children. It is designed to provide a fun and engaging experience for kids.</p>
+
+                    <a href="https://adhdsupportapp.netlify.app" class="btn-text" style="color: #3f78e0">
+                      <span class="span">Demo</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="left">
+                    <img src="happykid.png" width="600" height="367" loading="lazy" alt="Web Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-3" style="background-color: #f5faf7">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #7cb798">Data Analysis</p>
+
+                    <h3 class="h3 card-title">IIHE University</h3>
+
+                    <p class="card-text">
+                      IIHE University is a leading institution in Sri Lanka, offering a wide range of programs in information technology and business management. The university is
+                      known for its innovative teaching methods and strong emphasis on practical skills development.
+                    </p>
+
+                    <a href="https://www.iihe.lk" class="btn-text" style="color: #7cb798">
+                      <span class="span">Demo</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img src="iihe.png" width="600" height="367" loading="lazy" alt="Web Design" class="w-100" />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div class="project-card project-card-4" style="background-color: #fcf4f6">
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #d16b86">Freelancer</p>
+
+                    <h3 class="h3 card-title">Client Application</h3>
+
+                    <p class="card-text">
+                      Develop technical skills in web development.Gain practical experience through collaboration. Following is a mobile application that I have developed for a
+                      client.
+                    </p>
+
+                    <a href="#" class="btn-text" style="color: #d16b86">
+                      <span class="span">Demo</span>
+
+                      <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <video src="freelance.mkv" width="620" height="370" loading="lazy" alt="Mobile Design" class="w-100" autoplay muted loop></video>
+                  </figure>
+                </div>
+              </li>
+            </ul>
           </div>
+        </section>
 
-          <ul class="grid-list">
-
-            <li>
-              <div class="project-card project-card-1" style="background-color: #f8f5fb">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class="card-tag" style="color: #a07cc5">Data Engineering</p>
-
-                  <h3 class="h3 card-title">Sales Data Dashboard</h3>
-
-                  <p class="card-text">
-                    The Sales Data Dashboard is an interactive web application that provides real-time insights into sales performance.
-                    It features dynamic visualizations and intuitive controls to help users explore and analyze sales data effectively.
-                  </p>
-
-                  <a href="https://asianmirror.lk/" class="btn-text" style="color: #a07cc5">
-                    <span class="span">Demo</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
+        <section class="section contact" aria-label="contact" id="contact">
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-content" data-reveal="left">
+                <div class="card-icon">
+                  <img src="icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon" />
                 </div>
 
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./salesdata.jpg" width="650" height="370" loading="lazy" alt="Web Design" class="w-100">
-                </figure>
+                <h2 class="h2 section-title">Contact Me ! let's work together.</h2>
 
+                <p class="section-text">Have any questions? Reach out to me from this contact form and I will get back to you shortly.</p>
               </div>
-            </li>
 
-            <li>
-              <div class="project-card project-card-2" style="background-color: #f1f5fd">
+              <form action="" class="contact-form" data-reveal="right">
+                <div class="input-wrapper">
+                  <input type="text" name="name" placeholder="Name *" required class="input-field" />
 
-                <div class="card-content" data-reveal="right">
-
-                  <p class=" card-tag" style="color: #3f78e0">AI/ ML</p>
-
-                  <h3 class="h3 card-title">HappyKid</h3>
-
-                  <p class="card-text">
-                    HappyKid is a interactive application specifically for children. It is designed to provide a fun and engaging experience for kids.
-                  </p>
-
-                  <a href="https://adhdsupportapp.netlify.app" class="btn-text" style="color: #3f78e0">
-                    <span class="span">Demo</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
+                  <input type="email" name="email_address" placeholder="Email *" required class="input-field" />
                 </div>
 
-                <figure class="card-banner" data-reveal="left">
-                  <img src="happykid.png" width="600" height="367" loading="lazy" alt="Web Design" class="w-100">
-                </figure>
+                <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
 
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card project-card-3" style="background-color: #f5faf7">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #7cb798">Data Analysis</p>
-
-                  <h3 class="h3 card-title">IIHE University</h3>
-
-                  <p class="card-text">
-                    IIHE University is a leading institution in Sri Lanka, offering a wide range of programs in information technology and business management.
-                    The university is known for its innovative teaching methods and strong emphasis on practical skills development.
-                  </p>
-
-                  <a href="https://www.iihe.lk" class="btn-text" style="color: #7cb798">
-                    <span class="span">Demo</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="iihe.png" width="600" height="367" loading="lazy" alt="Web Design" class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card project-card-4" style="background-color: #fcf4f6">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #d16b86">Freelancer</p>
-
-                  <h3 class="h3 card-title">Client Application</h3>
-
-                  <p class="card-text">
-                    Develop technical skills in web development.Gain practical experience through collaboration. Following is a mobile application that I have developed for a client.
-                  </p>
-
-                  <a href="#" class="btn-text" style="color: #d16b86">
-                    <span class="span">Demo</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <video src="freelance.mkv" width="620" height="370" loading="lazy" alt="Mobile Design" class="w-100" autoplay muted loop></video>
-                </figure>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-      <section class="section contact" aria-label="contact" id="contact">
-        <div class="container">
-
-          <div class="contact-card">
-
-            <div class="contact-content" data-reveal="left">
-
-              <div class="card-icon">
-                <img src="icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
-              </div>
-
-              <h2 class="h2 section-title">Contact Me ! let's work together.</h2>
-
-              <p class="section-text">
-                Have any questions? Reach out to me from
-                this contact form and I will get back to you shortly.
-              </p>
-
+                <button type="submit" class="btn btn-secondary">Send message</button>
+              </form>
             </div>
-
-            <form action="" class="contact-form" data-reveal="right">
-
-              <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Name *" required class="input-field">
-
-                <input type="email" name="email_address" placeholder="Email *" required class="input-field">
-              </div>
-
-              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
-
-              <button type="submit" class="btn btn-secondary">Send message</button>
-
-            </form>
-
           </div>
+        </section>
 
-        </div>
-      </section>
+        <section class="section project" aria-labelledby="project-label" id="project">
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title" id="project-label">Location</h2>
 
-    </article>
-  </main>
+                <p class="section-text">
+                  I'm from Colombo, the heart of Sri Lanka and I draw inspiration from its rich culture and vibrant landscapes. My work reflects the beauty and diversity of my
+                  surroundings.
+                </p>
+              </div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63320.41806374048!2d80.58458173385395!3d7.294628572478901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy%2C%20Sri%20Lanka!5e0!3m2!1sen!2sjp!4v1751016076024!5m2!1sen!2sjp"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map-iframe"
+            ></iframe>
+          </div>
+        </section>
+      </article>
+    </main>
 
-  <footer class="footer">
-    <div class="container">
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">© All rights reserved.</p>
 
-      <p class="copyright">
-        © All rights reserved.
-      </p>
-
-      <ul class="social-list">
-
-        <li>
+        <ul class="social-list">
+          <li>
             <a href="https://www.twitter.com" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
@@ -497,16 +427,31 @@
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
+        </ul>
+      </div>
+    </footer>
 
-      </ul>
+    <audio id="bg-music" loop>
+      <source src="bg-music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
+    <button id="music-toggle" aria-label="Toggle music">
+      <ion-icon id="music-icon" name="musical-notes-outline"></ion-icon>
+    </button>
+
+    <div id="music-popup" class="music-popup">
+      <div class="popup-content">
+        <p>Do you want to hear some background music while reading the page?</p>
+        <div class="popup-buttons">
+          <button id="yes-music">Yes</button>
+          <button id="no-music">No</button>
+        </div>
+      </div>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>

@@ -20,7 +20,7 @@
   <body>
     <header class="header" data-header>
       <div class="container">
-        <a href="/" class="logo">
+        <a href="/diniru_dulakshi_portfolio" class="logo">
           <img src="../images/background.png" width="64" height="24" alt="Diniru home" />
         </a>
 
@@ -372,6 +372,30 @@
             </div>
           </div>
         </section>
+
+        <section class="section project" aria-labelledby="project-label" id="project">
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title" id="project-label">Location</h2>
+
+                <p class="section-text">
+                  I'm from Colombo, the heart of Sri Lanka and I draw inspiration from its rich culture and vibrant landscapes. My work reflects the beauty and diversity of my
+                  surroundings.
+                </p>
+              </div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.80392192714!2d79.81500578344452!3d6.921922084975778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sjp!4v1751015889918!5m2!1sen!2sjp"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map-iframe"
+            ></iframe>
+          </div>
+        </section>
       </article>
     </main>
 
@@ -406,6 +430,25 @@
         </ul>
       </div>
     </footer>
+
+    <audio id="bg-music" loop>
+      <source src="bg-music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <button id="music-toggle" aria-label="Toggle music">
+      <ion-icon id="music-icon" name="musical-notes-outline"></ion-icon>
+    </button>
+
+    <div id="music-popup" class="music-popup">
+      <div class="popup-content">
+        <p>Do you want to hear some background music while reading the page?</p>
+        <div class="popup-buttons">
+          <button id="yes-music">Yes</button>
+          <button id="no-music">No</button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
